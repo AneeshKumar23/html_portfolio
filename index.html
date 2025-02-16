@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light's Portfolio</title>
     <link rel="icon" href="./assets/images/cat.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .social-media a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-media a:hover {
+            color: #0073b1; /* LinkedIn blue for hover */
+        }
+
+        .share-buttons a {
+            margin: 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .share-buttons a i {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +41,7 @@
 
     <div id="hero" class="hero">
         <h1>Welcome to Light's Portfolio</h1>
-        <h2>I am a web dev</h2>
+        <h2>I am a web developer</h2>
     </div>
 
     <h2 id="projects">Projects</h2>
@@ -30,6 +53,18 @@
             <div>
                 <h3>Movie Ranking Project</h3>
                 <p>A ranking of my favorite movies with reviews and recommendations.</p>
+                <!-- Social Media Share Links for Movie Ranking -->
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_PROJECT_URL" target="_blank">
+                        <i class="fab fa-facebook"></i> Share on Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url=YOUR_PROJECT_URL&text=Check%20out%20this%20Movie%20Ranking%20project!" target="_blank">
+                        <i class="fab fa-twitter"></i> Tweet
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_PROJECT_URL&title=Movie%20Ranking%20Project" target="_blank">
+                        <i class="fab fa-linkedin"></i> Share on LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -40,12 +75,41 @@
             <div>
                 <h3>Birthday Invite Project</h3>
                 <p>A fun and colorful birthday invitation template.</p>
+                <!-- Social Media Share Links for Birthday Invite -->
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_PROJECT_URL" target="_blank">
+                        <i class="fab fa-facebook"></i> Share on Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url=YOUR_PROJECT_URL&text=Check%20out%20this%20Birthday%20Invite%20project!" target="_blank">
+                        <i class="fab fa-twitter"></i> Tweet
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_PROJECT_URL&title=Birthday%20Invite%20Project" target="_blank">
+                        <i class="fab fa-linkedin"></i> Share on LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
 
+<<<<<<< HEAD
 
+=======
+    <footer>
+        <a href="./public/about.html"><h4>About Me</h4></a>
+        <a href="./public/contact.html"><h4>Contact Me</h4></a>
+
+        <div class="social-media">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+        <p>&copy; 2021 Light's Portfolio</p>
+    </footer>
+>>>>>>> cd091f263ba12d21f618a92ec6d20b303a089932
 
     <script src="index.js"></script>
 
