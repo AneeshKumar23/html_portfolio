@@ -1,4 +1,3 @@
-        //Smooth scrolling
         const links = document.querySelectorAll("nav a[href^='#']");
         links.forEach(link => {
             link.addEventListener("click", function(event) {
