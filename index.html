@@ -2,20 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="./assets/images/cat.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light's Portfolio</title>
+    <link rel="icon" href="./assets/images/cat.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Light's Portfolio</h1>
-    <h2>I am a web developer</h2>
-    <hr>
-    <a href="./public/movie-ranking.html"><h2>Movie ranking project</h2></a>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project screen shot">
-    <a href="./public/birthday-invite.html"><h2>Birthday invite Project</h2></a>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="Birthday invite project screen shot">
-    <hr>
-    <a href="./public/about.html"><h4>About me</h4></a>
-    <a href="./public/contact.html"><h4>Contact me</h4></a>
+
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#socials">Socials</a>
+        <a href="./public/about.html">About</a>
+        <a href="./public/contact.html">Contact</a>
+    </nav>
+
+    <div id="hero" class="hero">
+        <h1>Welcome to Light's Portfolio</h1>
+        <h2>I am a web dev</h2>
+    </div>
+
+    <h2 id="projects">Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <a href="./public/movie-ranking.html">
+                <img src="./assets/images/movie-ranking.png" alt="Movie ranking">
+            </a>
+            <div>
+                <h3>Movie Ranking Project</h3>
+                <p>A ranking of my favorite movies with reviews and recommendations.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="./public/birthday-invite.html">
+                <img src="./assets/images/birthday-invite.png" alt="Birthday invite">
+            </a>
+            <div>
+                <h3>Birthday Invite Project</h3>
+                <p>A fun and colorful birthday invitation template.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="socials">Connect with Me</h2>
+    <div class="socials">
+        <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 Light's Portfolio</p>
+    </footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>
