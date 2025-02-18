@@ -40,6 +40,8 @@ nav a:hover {
     align-items: center;
     gap: 50px;
     margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .project {
     display: flex;
@@ -88,4 +90,36 @@ nav a:hover {
 }
 .socials a:hover {
     color: purple;
+}
+
+.project-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-info p {
+    margin: 5px 0;
 }
