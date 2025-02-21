@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Smooth Scroll for Anchor Links
     const links = document.querySelectorAll("nav a[href^='#']");
 
     links.forEach(link => {
@@ -20,4 +21,35 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Modal functionality for image gallery
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("caption");
+    var closeBtn = document.getElementById("close");
+
+    // Get all project images
+    var projectImages = document.querySelectorAll(".project-image");
+
+    // Loop through all project images and add a click event to show modal
+    projectImages.forEach(function(img) {
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        };
+    });
+
+    // Close modal when user clicks on close button
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // Close modal when user clicks anywhere outside the image
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 });
+
