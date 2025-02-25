@@ -17,16 +17,18 @@ This is a simple personal portfolio website built with **HTML, CSS, and JavaScri
 ## File Structure
 ```
 Light-Portfolio/
-│── images/                  # Stores images used in the portfolio
-│── public/                  # Additional pages (About, Contact, Project pages)
-│   ├── about.html
-│   ├── contact.html
-│   ├── movie-ranking.html
-│   ├── birthday-invite.html
-│── styles.css                # CSS for styling the website
-│── index.js                  # JavaScript for additional interactivity
-│── index.html                # Main portfolio page
-│── README.md                 # Project documentation
+├── backend/
+│   └── server.js
+├── frontend/
+│   ├── images/
+│   │   ├── cat.jpg
+│   │   └── iconic_laugh.png
+│   ├── index.html
+│   ├── index.js
+│   └── styles.css
+├── Users.json
+└── README.md
+└── package.json
 ```
 
 ## How to Use
